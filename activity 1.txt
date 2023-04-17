@@ -1,0 +1,77 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2
+
+
+(i)HTTP1.1 works on the textual format while HTTP2 works on the binary protocol.
+(ii)In HTTP1.1 there is head of line blocking that blocks all the requests behind it until it 
+doesn’t get its all resources while HTTP2  allows multiplexing so one TCP connection is required for multiple requests.
+(iii)HTTP1.1 uses requests resource Inlining for use getting multiple pages while HTTP2 uses 
+PUSH frame by server that collects all multiple pages.
+(iv)HTTP 1.1 compresses data by itself while HTTP2 uses HPACK for data compression.
+(v)HTTP1.1 is relatively secure since it uses digest authentication, NTLM authentication while
+HTTP2 is better equipped to deal with them due to new TLS features like connection error of type Inadequate_Security.
+(vi)However HTTP2  has advantages over HTTP1.1 over the following areas:
+*Protocol negotiation mechanism — protocol electing
+*High-level compatibility with HTTP/1.1 — methods, status codes, URIs and header fields.
+*Page load speed improvements trough:
+*Compression of request headers
+*Binary protocol
+*HTTP/2 Server Push
+*Request multiplexing over a single TCP connection
+*Request pipelining
+*HOL blocking (Head-of-line) — Package blocking
+
+
+
+
+
+2.Write a blog about objects and its internal representation in Javascript
+
+
+(i)Objects are important data types in javascript.
+(ii)Objects are different than primitive datatypes (i.e. number, string, boolean, etc.). 
+(iii)Primitive data types contain one value but Objects can hold many values in form of Key: value pair. 
+(iv)These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+(v)Every object has some property associated with some value. These values can be accessed using these properties associated with them.
+
+For example;
+var myPhone = new Object();
+myPhone.make = 'Redmi';
+myPhone.model = '8';
+myPhone.year = 2018;
+myCar.battery = 5000mAh;
+
+After creating myCar object, the value inside the object can be accessed using keys.
+
+i.e.
+
+myPhone.year
+
+Output: 2018
+
+These values can be accessed using brackets notation also.
+
+myCar[year]
+
+Output: 2018
+
+The syntax for adding a property to an object is :
+ObjectName.ObjectProperty = propertyValue;
+The syntax for deleting a property from an object is:
+delete ObjectName.ObjectProperty;
+The syntax to access a property from an object is:
+objectName.property (or) objectName["property”] (or) objectName[expression]   
+So, conclusion and simple definition for Java Script properties is “Properties are the values associated with a JavaScript object”.
+
+
+Object methods
+An object method is an object property containing a function definition.
+
+i.e.,
+
+Let’s assume to start the phone there will be a mechanical functionality.
+function(){return powerButton.on}
+
+and so similar is to volume up/down , etc.
+So, conclusion and simple definition for Java Script Object methods is “Methods are actions that can be performed on objects.”
+
+
